@@ -13,7 +13,7 @@
 
             <!-- form container 1-->
             <div>
-                <form action="">
+                <form action="/task/add" method="POST">
                     <!-- inputs -->
                     <div>
                         <div>
@@ -55,21 +55,27 @@
                     <!-- tasks -->
                     <div>
                         <ul>
+
+                            <% for(i of tasks){ %>
                             <li>
                                 <input id="" type="checkbox" name="task">
                                 <label for="">
                                     <div>
-                                        <p></p>
+                                        <p> <%= i.description %> </p>
                                         <p>
                                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            <!--TODO: date -->
+                                            <%= i.duedate %>
                                         </p>
                                     </div>
                                     <div>
-                                        
+                                        <p>
+                                            <%= i.category %>
+                                        </p>
                                     </div>
                                 </label>
                             </li>
+                            <% } %>
+
                         </ul>
                     </div>
                 </form>

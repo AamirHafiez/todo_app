@@ -8,6 +8,9 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
+// for form
+app.use(express.urlencoded());
+
 // load router
 app.use('/', require('./routes'));
 
