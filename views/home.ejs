@@ -3,6 +3,82 @@
         <title> <%= title %> </title>
     </head>
     <body>
-        <h1>To Do App</h1>
+        
+        <!-- main container -->
+        <main>
+            <!-- heading -->
+            <div class="heading">
+                <h1>ToDo App</h1>
+            </div>
+
+            <!-- form container 1-->
+            <div>
+                <form action="">
+                    <!-- inputs -->
+                    <div>
+                        <div>
+                            <label for="description">Description</label>
+                            <input id="description" type="text" name="description" placeholder="What do you need to do?" required>
+                        </div>
+                        <div>
+                            <label for="category">Category</label>
+                            <select id="category" name="category" required>
+                                <option value="personal">Personal</option>
+                                <option value="work">Work</option>
+                                <option value="school">School</option>
+                                <option value="cleaning">Cleaning</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="date">Due Date</label>
+                            <input id="date" type="date" name="date" required>  
+                        </div>
+                    </div>
+
+                    <!-- submit button (add task) -->
+                    <button type="submit">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        Add Task
+                    </button>
+                </form>
+            </div>
+
+            <!-- form container 2-->
+            <div>
+                <form action="">
+                    <button type="submit">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        Delete Tasks
+                    </button>
+
+                    <!-- tasks -->
+                    <div>
+                        <ul>
+                            <li>
+                                <input id="" type="checkbox" name="task">
+                                <label for="">
+                                    <div>
+                                        <p></p>
+                                        <p>
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <!--TODO: date -->
+                                        </p>
+                                    </div>
+                                    <div>
+                                        
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+
+
+         <!-- font awesome cdn -->
+         <script src="https://kit.fontawesome.com/c90807128e.js" crossorigin="anonymous"></script>
     </body>
 </html>
