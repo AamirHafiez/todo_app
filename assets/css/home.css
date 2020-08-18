@@ -1,0 +1,37 @@
+/* scroll bar css */
+.scrollbar-pink::-webkit-scrollbar-track {
+background-color: #F5F5F5;
+border-radius: 10px; 
+}
+
+.scrollbar-pink::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5; 
+}
+
+.scrollbar-pink::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background-color: #ec407a; 
+}
+
+.scrollbar-pink {
+scrollbar-color: #ec407a #F5F5F5;
+}
+
+.bordered-pink::-webkit-scrollbar-track {
+border: 1px solid #ec407a; 
+}
+
+.thin::-webkit-scrollbar {
+width: 6px; 
+height: 6px;
+}
+
+/* task tabs */
+#task-tab{
+    transition: transform 0.3s;
+}
+
+#task-tab:hover{
+    transform: scale(1.04);
+}
